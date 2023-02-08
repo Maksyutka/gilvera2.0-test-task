@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>My project</title>
+  </head>
+  <body>
+    <div class="sidebar sidebar_hidden">
+      <div class="logo">
+        <svg>
+          <use xlink:href="./images/icons/icons.svg#logo"></use>
+        </svg>
+        <p class="logo__text">Dashboard</p>
+        <p class="logo__ver">v.01</p>
+      </div>
+      <div class="sidebar__nav">
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#dashboard"></use>
+              </svg>
+              <p class="sidebar__nav-text">Dashboard</p>
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#product"></use>
+              </svg>
+              <p class="sidebar__nav-text">Product</p>
+              <svg class="sidebar__nav-arrow">
+                <use xlink:href="./images/icons/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar__nav-item sidebar__nav-item_active">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#customers"></use>
+              </svg>
+              <p class="sidebar__nav-text">Customers</p>
+              <svg class="sidebar__nav-arrow">
+                <use xlink:href="./images/icons/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#income"></use>
+              </svg>
+              <p class="sidebar__nav-text">Income</p>
+              <svg class="sidebar__nav-arrow">
+                <use xlink:href="./images/icons/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#promote"></use>
+              </svg>
+              <p class="sidebar__nav-text">Promote</p>
+              <svg class="sidebar__nav-arrow">
+                <use xlink:href="./images/icons/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a class="sidebar__nav-link" href="#">
+              <svg class="sidebar__nav-icon">
+                <use xlink:href="./images/icons/icons.svg#help"></use>
+              </svg>
+              <p class="sidebar__nav-text">Help</p>
+              <svg class="sidebar__nav-arrow">
+                <use xlink:href="./images/icons/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__profile">
+        <div class="sidebar__profile-img-wrapper">
+          <img class="sidebar__profile-img" src="./images/content/avatar.jpg" alt="avatar" />
+        </div>
+        <div class="sidebar__profile-info">
+          <p class="sidebar__profile-name">Evano</p>
+          <p class="sidebar__profile-position">Project Manager</p>
+        </div>
+      </div>
+    </div>
+    <main class="main-content">
+      <div class="burger">
+        <svg>
+          <use xlink:href="./images/icons/icons.svg#burger"></use>
+        </svg>
+      </div>
+      <div class="container">
+        <h1 class="title">Hello <span class="title_name">Evano</span> 👋🏼,</h1>
+        <div class="customers">
+          <div class="customers__head">
+            <div class="customers__head-upper">
+              <div class="customers__title-block">
+                <h2 class="customers__title">All Customers</h2>
+                <p class="customers__subtitle">Active Members</p>
+              </div>
+              <form class="customers__form" action="#">
+                <button class="customers__submit" type="submit">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#search"></use>
+                  </svg>
+                </button>
+                <input class="customers__input" placeholder="Search" type="text" />
+              </form>
+            </div>
+            <div class="customers__head-lower">
+              <div class="customers__list-label customers__list-label_name">Customer Name</div>
+              <div class="customers__list-label customers__list-label_company">Company</div>
+              <div class="customers__list-label customers__list-label_num">Phone Number</div>
+              <div class="customers__list-label customers__list-label_email">Email</div>
+              <div class="customers__list-label customers__list-label_country">Country</div>
+              <div class="customers__list-label customers__list-label_status">Status</div>
+            </div>
+          </div>
+          <ul class="customers__list">
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Jane Cooper</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Microsoft</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(225) 555-0118</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">jane@microsoft.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Country:</div>
+                <p class="customers__value">United States</p>
+              </div>
+              <div class="customers__status">Active</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Floyd Miles</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Yahoo</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(205) 555-0100</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">floyd@yahoo.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">Kiribati</p>
+              </div>
+              <div class="customers__status customers__status_inactive">Inactive</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Floyd Miles</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Yahoo</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(205) 555-0100</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">floyd@yahoo.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">Kiribati</p>
+              </div>
+              <div class="customers__status customers__status_inactive">Inactive</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Jane Cooper</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Microsoft</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(225) 555-0118</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">jane@microsoft.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Country:</div>
+                <p class="customers__value">United States</p>
+              </div>
+              <div class="customers__status">Active</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Jane Cooper</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Microsoft</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(225) 555-0118</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">jane@microsoft.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Country:</div>
+                <p class="customers__value">United States</p>
+              </div>
+              <div class="customers__status">Active</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Jane Cooper</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Microsoft</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(225) 555-0118</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">jane@microsoft.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Country:</div>
+                <p class="customers__value">United States</p>
+              </div>
+              <div class="customers__status">Active</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Jane Cooper</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Microsoft</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(225) 555-0118</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">jane@microsoft.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Country:</div>
+                <p class="customers__value">United States</p>
+              </div>
+              <div class="customers__status">Active</div>
+            </li>
+            <li class="customers__list-item">
+              <div class="customers__text customers__text_name">
+                <div class="customers__mobile-label">Customer Name:</div>
+                <p class="customers__value">Floyd Miles</p>
+              </div>
+              <div class="customers__text customers__text_company">
+                <div class="customers__mobile-label">Company:</div>
+                <p class="customers__value">Yahoo</p>
+              </div>
+              <div class="customers__text customers__text_num">
+                <div class="customers__mobile-label">Phone Number:</div>
+                <p class="customers__value">(205) 555-0100</p>
+              </div>
+              <div class="customers__text customers__text_email">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">floyd@yahoo.com</p>
+              </div>
+              <div class="customers__text customers__text_country">
+                <div class="customers__mobile-label">Email:</div>
+                <p class="customers__value">Kiribati</p>
+              </div>
+              <div class="customers__status customers__status_inactive">Inactive</div>
+            </li>
+          </ul>
+          <div class="customers__foot">
+            <p class="customers__statistics">Showing data <span class="customers__statistics_from">1</span> to <span class="customers__statistics_to">8</span> of <span class="customers__statistics_total">256K</span> entries</p>
+            <div class="customers__pagination">
+              <button class="customers__pagination-arrow customers__pagination-arrow_prev">&lt;</button>
+              <div class="customers__pagination-list">
+                <a class="customers__pagination-link customers__pagination-link_active" href="#">1</a>
+                <a class="customers__pagination-link" href="#">2</a>
+                <a class="customers__pagination-link" href="#">3</a>
+                <a class="customers__pagination-link" href="#">4</a>
+                <span class="customers__pagination-dots">...</span>
+                <a class="customers__pagination-link" href="#">40</a>
+              </div>
+              <button class="customers__pagination-arrow customers__pagination-arrow_next">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</html>
