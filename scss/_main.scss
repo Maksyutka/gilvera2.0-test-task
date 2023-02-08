@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+html {
+  &.overflowed {
+    overflow: hidden;
+  }
+}
+
 body {
   background-color: var(--color-bg);
   font-family: "Poppins", sans-serif;
@@ -561,7 +567,7 @@ body {
   }
 
   .sidebar {
-    padding: 25px 15px 40px 15px;
+    padding: 25px 15px 70px 15px;
   }
 
   .sidebar__nav-link {
